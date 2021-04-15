@@ -33,8 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleFormVisibilityButton.addEventListener("click", () => {
     if (contactForm.style.display === "") {
       contactForm.style.display = "none";
+      toggleFormVisibilityButton.innerHTML = "Show form"
     } else {
       contactForm.style.display = "";
+      toggleFormVisibilityButton.innerHTML = "Hide form"
     }
   });
 
